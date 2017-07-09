@@ -1,0 +1,12 @@
+<script>
+    var socket1 = new WebSocket("ws://localhost:10742/ws"); 
+    socket1.onopen = function (event) {
+        socket1.send("I'm a browser that has connected!"); 
+    };  
+
+
+    var socket2 = new WebSocket("ws://localhost:10743/ws"); 
+    socket2.onopen = function (event) {
+        socket2.send("I'm a browser that has connected!"); 
+    };  
+</script>
